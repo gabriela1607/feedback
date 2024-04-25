@@ -1,9 +1,9 @@
 let botoes = document.querySelectorAll(".botoes button")
 botoes.forEach(botao => {
-    botao.addEventListener("click", guardarNota)
+    botao.addEventListener("click", guardarnota)
 })
 
-function guardarNota(evento) {
+function guardarnota(evento) {
     let nota = evento.target.innerText
 
     localStorage.setItem("nota", nota)
